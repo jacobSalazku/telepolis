@@ -1,9 +1,15 @@
-import React from 'react'
+import React  from "react";
+import { Link }  from 'react-router-dom'
 
-export const Navbar = () => {
+ const Navbar = () => {
   return (
 
-        <nav
-
+      <div className="flex-row nav">
+        <Link to="/">Home</Link>
+        <Link to="/Coming-Soon">Coming Soon</Link>
+        <Link to="/new-releases"> New Releases</Link>
+      </div>
   );
 }
+
+export default Navbar;
