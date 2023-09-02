@@ -1,0 +1,28 @@
+.flex {
+    
+    display: flex;
+    flex-direction: column;
+    padding: $breakpoint-2 $breakpoint-2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: $breakpoint-7;
+    margin-bottom: $breakpoint-3;
+}
+.section-title { 
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $breakpoint-6;   
+}
+
+
+
+.section-description p {
+    margin: $breakpoint-2 0;
+    
+}
+
+
+
+

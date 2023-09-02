@@ -1,0 +1,52 @@
+.hamburger {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  width: 4rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0.5;
+  align-self: flex-end; 
+  transform: rotate(180deg); 
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: $white;
+  transition: transform 0.3s ease;
+}
+
+.bar.big {
+  width: 100%;
+  color: $white;
+}
+
+.bar.small {
+  width: 70%;
+  color: white;
+}
+
+.bar.smallest {
+  width: 35%;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(13px) rotate(40deg);
+  width: 100%;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-2px) rotate(-45deg);
+  width: 100%;
+}
+

@@ -1,0 +1,115 @@
+.headline {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: $breakpoint-2;
+    min-height: 100%;
+    height: 140%;
+    width: 100%;
+    gap: $breakpoint-4;
+   
+   
+}
+
+.headline-title { 
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem 0 5rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+  
+}
+
+.headline-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+
+}
+.headline-buttons button {
+
+  width: 178px;
+  height: 65px;
+
+
+}
+.headline-buttons button p {
+
+ margin-top: $breakpoint-2;
+
+
+}
+.headline-images{
+  padding-top: 2rem;
+  position: relative;
+  width: 100%; 
+  height: 120%;
+  margin-top: 1;
+  padding-bottom: $breakpoint-4;
+}
+.headline-image-item{
+  margin-top: 4rem;
+  
+}
+
+.headline-images::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 85.15%);
+}
+
+
+
+
+
+@media screen and ( min-width: 1100px) {
+  .headline{
+    height: 100%;
+    }
+  .headline-images{
+    margin-top: 2rem;
+    padding-bottom: $breakpoint-7;
+    height: 80%;
+  }
+    .headline-images::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 85.15%);
+  }
+  .headline-title h1{
+    padding:0 10rem;
+    margin: $breakpoint-6 2rem;
+  }
+  .headline-section{
+
+    padding: 0 $breakpoint-6+ 0.5rem;
+    margin: 0 $breakpoint-6 + 0.5rem;
+  }
+   .headline-buttons{
+    
+    flex-direction: row;
+    justify-content: center;
+    margin-top: $breakpoint-6;
+   }
+ 
+  
+  .item {
+    position: absolute;
+    grid-area: chatbot;
+    top: 0%;
+    left: 50%;
+  }
+
+
+}
+

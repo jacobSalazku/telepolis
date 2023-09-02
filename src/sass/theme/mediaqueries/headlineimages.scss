@@ -1,0 +1,129 @@
+@media screen and (min-width: 1400px) {    
+    
+    
+    .item--1 {
+    transform: translateX(-40%) translateY(7%) ;
+    max-width:100% ;
+    max-height:  100%;
+    }
+    .item--2 {
+    max-width:100% ;
+    max-height:  100%;
+    transform: translateX(-78%) translateY(37%);
+    }
+    .item--3 {
+    transform: translateX(-11%) translateY(25%) ;
+    max-width:100% ;
+    max-height:  100%;
+    }
+        
+    .desktop-flex{
+        display:flex;
+        flex-direction: row;
+        padding: 0px;
+        
+        margin: $breakpoint-6 $breakpoint-6;
+      }
+    
+    
+      .feature-back-image img {
+        width: 696px;
+        height: 659px;  
+      }
+    
+      .feature-front-image img {
+        height: 276px;
+        left: 352px;
+      }
+    
+    
+      .feature-pictures{
+   
+        display: flex;
+        flex-direction: column;
+        width: 73%;
+        
+      }
+    
+      .feature-pictures{
+       
+        margin-top: $breakpoint-5;
+      }
+    
+      .feature-back-image{
+    
+        filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+      }
+    
+      .feature-front-image{
+      
+        right: 0rem;
+        margin:42rem auto 0 auto;
+        filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+        
+      }
+    
+      .feature-description{
+        margin-top: $breakpoint-6;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 37%;
+        height: auto;
+        padding-right: 1rem;
+        gap: $breakpoint-4;
+      }
+      .description__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+        text-align: left;
+        padding-right: 10rem;
+    
+        gap: 2rem;
+      }
+      .description__items-title{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;  
+        gap: $breakpoint-4;  
+        text-align: left;
+      }
+}
+
+@media screen and (min-width: 450px) {
+
+  .headline{
+    height: 100%;
+  }
+  .item {
+    position: absolute;
+    grid-area: chatbot;
+    min-width: 65%;
+    top: 0%;
+    left: 50%;
+  
+  &__content{
+    color: white;
+  
+  
+    transition: transform 300ms;
+  
+    &:hover {
+      transform: none !important;
+    }
+  }
+    &--1 {
+      transform: translateX(-45%) translateY(-27%) ;
+    }
+    &--2 {
+      transform: translateX(-90%) translateY(37%);
+    }
+    &--3 {
+      transform: translateX(12%) translateY(18%) ;
+    }
+  }
+} 

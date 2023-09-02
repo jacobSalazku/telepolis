@@ -1,0 +1,52 @@
+// buttons
+.ghost-button {
+  
+    background-color:$dark-backgroundcolor;
+    color: $secondairy-textcolor;
+    border-color: $white;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+    width: 190px;
+    height: 52px;
+}
+.primairy-button  {
+  
+    background-color:$primary-color;
+    color: $secondairy-textcolor;
+    padding: 1.5rem 1rem;
+    border-color: $white;
+    cursor: pointer;
+    border-radius: 2px;
+    border: white 2px;
+    width: 190px;
+    height: 52px;
+    text-align: center;
+
+
+    
+}
+.primairy-button p{
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+   
+}
+.ghost-button:hover {
+    background-color: $lighthover-backgroundcolor; /* Define the desired hover background color */
+    color: $text-color; /* Define the desired hover text color */
+}
+
+/* Hover effect for primairy-button */
+.primairy-button:hover {
+    background-color:$secondairy-color; /* Define the desired hover background color */
+    color: $text-color; /* Define the desired hover text color */
+}
+.ghost-button,
+.primairy-button {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition properties */
+}
