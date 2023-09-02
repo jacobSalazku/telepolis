@@ -6,8 +6,8 @@ import { Link }  from 'react-router-dom'
 
       <div className=" flex nav">
         <Link to="/">Home</Link>
-        <Link to="/Coming-Soon">Coming Soon</Link>
-        <Link to="/new-releases"> New Releases</Link>
+        <Link to="/coming-soon">Coming Soon</Link>
+ 
       </div>
   );
 }
