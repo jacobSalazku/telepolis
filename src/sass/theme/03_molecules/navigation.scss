@@ -1,57 +1,25 @@
 
-.mobile-nav.active {
-    right: 0; /* Slide the mobile navigation in */
-}
+.nav{
+    margin: 0 auto;
+  }
+  /* Style the navigation links */
+  .nav a {
+    color: $white; /* Text color */
+    text-decoration: none; /* Remove underlines */
+    padding: 15px 30px; /* Increase padding for more space */
+    font-size: 25px; /* Increase font size */
+    transition: color 0.3s ease;
+    font-weight: 500;
   
-.mobile-nav {
-    position: fixed;
-    top: 0;
-    right: -200%; /* Initially position it outside the viewport */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 9999;
-    /* pointer-events: none; <-- Remove this line */
-    padding: 3rem 1rem 7rem 1rem;
-    background-color: $dark-backgroundcolor;
-    transition: right 0.3s ease; /* Add transition for smooth animation */
-    margin-top: 8rem;
-}
+    /* Add text shadow */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, shadow color */
+  }
   
-.mobile-nav__links {
-    list-style: none;
-    padding: 0;
-    height: 100%;
-    width: 100%; 
-}
+  /* Hover effect for the links */
+  .nav a:hover {
   
-.mobile-nav__links li {
-    display: block;
-    text-align: center;
-    padding: $breakpoint-4 0;
-    border-bottom: 1px solid   $third-color;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition properties */
-}
   
-.mobile-nav__links li a {
-    color: $white;
-    text-decoration: none;
-    padding: $breakpoint-3 $breakpoint-4;
-}
-
-.mobile-nav__links li:hover {
-    background-color: $third-color; /* Add your desired hover background color */
-    /* pointer-events: auto; <-- Remove this line */
-}
-
-.no-scroll {
-    overflow: hidden;
-}
-
-
-/* Styles for desktop navigation */
-
-
-
+      transform: scale(1.05); /* Increase size on hover */
+      color: $secondairy-grey; /* Change text color on hover */
+     
+  }
